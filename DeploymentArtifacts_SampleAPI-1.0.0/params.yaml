@@ -6,35 +6,10 @@ environments:
                   url: https://dev.sample.com
               sandbox:
                   url: https://dev.sample.com
-          security:
-              enabled:
-              type:
-              username:
-              password:
           deploymentEnvironments:
-              - displayOnDevportal:
-                deploymentEnvironment:
-                deploymentVhost:
-              - displayOnDevportal:
-                deploymentEnvironment:  
-                deploymentVhost:
-          certs:
-              - hostName:
-                alias:
-                path:
-              - hostName:
-                alias:
-                path:
-          mutualSslCerts:
-              - tierName:
-                alias:
-                path:
-              - tierName:
-                alias:
-                path:
-          policies:
-              - 
-              -  
+              - displayOnDevportal: ture
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
     - name: prod
       configs: 
           endpoints:
@@ -42,32 +17,7 @@ environments:
                   url: https://prod.sample.com
               sandbox:
                   url: https://prod.sample.com
-          security:
-              enabled:
-              type:
-              username:
-              password:
           deploymentEnvironments:
-              - displayOnDevportal:
-                deploymentEnvironment:
-                deploymentVhost:
-              - displayOnDevportal:
-                deploymentEnvironment:  
-                deploymentVhost:
-          certs:
-              - hostName:
-                alias:
-                path:
-              - hostName:
-                alias:
-                path:
-          mutualSslCerts:
-              - tierName:
-                alias:
-                path:
-              - tierName:
-                alias:
-                path:
-          policies:
-              - 
-              - 
+              - displayOnDevportal: true
+                deploymentEnvironment: Default
+                deploymentVhost: localhost
