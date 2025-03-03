@@ -1,0 +1,73 @@
+environments:
+    - name: dev
+      configs: 
+          endpoints:
+              production:
+                  url: https://dev.sample.com
+              sandbox:
+                  url: https://dev.sample.com
+          security:
+              enabled:
+              type:
+              username:
+              password:
+          deploymentEnvironments:
+              - displayOnDevportal:
+                deploymentEnvironment:
+                deploymentVhost:
+              - displayOnDevportal:
+                deploymentEnvironment:  
+                deploymentVhost:
+          certs:
+              - hostName:
+                alias:
+                path:
+              - hostName:
+                alias:
+                path:
+          mutualSslCerts:
+              - tierName:
+                alias:
+                path:
+              - tierName:
+                alias:
+                path:
+          policies:
+              - 
+              -  
+    - name: prod
+      configs: 
+          endpoints:
+              production:
+                  url: https://prod.sample.com
+              sandbox:
+                  url: https://prod.sample.com
+          security:
+              enabled:
+              type:
+              username:
+              password:
+          deploymentEnvironments:
+              - displayOnDevportal:
+                deploymentEnvironment:
+                deploymentVhost:
+              - displayOnDevportal:
+                deploymentEnvironment:  
+                deploymentVhost:
+          certs:
+              - hostName:
+                alias:
+                path:
+              - hostName:
+                alias:
+                path:
+          mutualSslCerts:
+              - tierName:
+                alias:
+                path:
+              - tierName:
+                alias:
+                path:
+          policies:
+              - 
+              - 
